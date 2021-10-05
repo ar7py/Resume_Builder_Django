@@ -1,0 +1,9 @@
+{% extends 'resapp/base.html' %}
+
+{% block content %}
+    {% with person|first as person %}
+    	<div class="name">
+    		{{ person }}
+    	</div>
+    {% endwith %}
+{% endblock  %}

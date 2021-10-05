@@ -1,0 +1,12 @@
+{% extends 'resapp/base.html' %}
+
+{% block content %}
+    <form class="post-form" method="POST">
+    	<!-- CSRF TOKEN -->
+        {% csrf_token %}
+    	<!-- FORM CONTENT FROM form.py -->
+        {{form.as_p}}
+
+    	<center><button type="submit" class="_save btn btn-success text-center">Save</button></center>
+    </form>
+{% endblock  %}
